@@ -1,0 +1,26 @@
+{
+    "name": "gdelt-apitube-shim",
+    "version": "1.0.0",
+    "description": "GDELT DOC 2.0 compatibility shim for the APITube News API",
+    "type": "module",
+    "main": "gdelt-shim.js",
+    "exports": {
+        ".": "./gdelt-shim.js"
+    },
+    "scripts": {
+        "example": "node example.js",
+        "test": "node --test"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "keywords": [
+        "gdelt",
+        "gdelt-doc",
+        "news-api",
+        "apitube",
+        "migration",
+        "shim"
+    ],
+    "license": "MIT"
+}
