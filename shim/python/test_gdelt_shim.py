@@ -234,7 +234,7 @@ class TestGdeltShim(unittest.TestCase):
             {
                 "status": "not_ok",
                 "request_id": "req-9",
-                "errors": [{"status": 400, "code": "ER0171", "message": "Limit is out of range."}],
+                "errors": [{"status": 400, "code": "ER0171", "message": "Limit is out of range. Your plan allows up to 250 results per page."}],
             }
         )
         shim = GdeltShim(api_key="secret", on_warning=lambda m: None, session=session)

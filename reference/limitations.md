@@ -21,7 +21,7 @@ APITube fails loudly instead. The same over-limit request:
 
 ```bash
 curl "https://api.apitube.io/v1/news/everything?per_page=251" -H "X-API-Key: YOUR_API_KEY"
-# {"status":"not_ok","errors":[{"status":400,"code":"ER0171","message":"Limit is out of range."}]}
+# {"status":"not_ok","errors":[{"status":400,"code":"ER0171","message":"Limit is out of range. Your plan allows up to 250 results per page."}]}
 ```
 
 ### APITube ignores parameters it does not recognise

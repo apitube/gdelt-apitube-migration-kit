@@ -263,7 +263,7 @@ test('an APITube error becomes a typed exception carrying the code', async () =>
             json: async () => ({
                 status: 'not_ok',
                 request_id: 'req-9',
-                errors: [{ status: 400, code: 'ER0171', message: 'Limit is out of range.' }]
+                errors: [{ status: 400, code: 'ER0171', message: 'Limit is out of range. Your plan allows up to 250 results per page.' }]
             })
         })
     });

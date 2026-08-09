@@ -40,7 +40,7 @@ Both refuse 251, and the *way* they refuse is the difference this kit keeps comi
 | | Over the limit |
 |---|---|
 | GDELT | `200` + the plain-text line `A maximum of 250 records can be returned.` |
-| APITube | `400` + `{"errors":[{"code":"ER0171","message":"Limit is out of range."}]}` |
+| APITube | `400` + `{"errors":[{"code":"ER0171","message":"Limit is out of range. Your plan allows up to 250 results per page."}]}` |
 
 **Paging is the bigger change.** GDELT returns up to 250 records and stops; there is no offset, no cursor, no page number. If your query matches more, you narrow the query — usually by slicing the date range — and run it again. APITube has `page`, so the loop is an ordinary paging loop.
 

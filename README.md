@@ -54,7 +54,7 @@ Any client that checks `response.ok` and then calls `.json()` will pass the stat
 APITube returns a real status code and a structured error:
 
 ```json
-{"status":"not_ok","errors":[{"status":400,"code":"ER0171","message":"Limit is out of range."}]}
+{"status":"not_ok","errors":[{"status":400,"code":"ER0171","message":"Limit is out of range. Your plan allows up to 250 results per page."}]}
 ```
 
 If your GDELT client has a `try/except` around JSON parsing that treats a parse failure as "no results", it is currently hiding both of these conditions. That code path stops being needed after the migration — but check what it was swallowing first.
